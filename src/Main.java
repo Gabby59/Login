@@ -40,6 +40,8 @@ public class Main {
                     attempt++;
                 }
             }
+
+            //when the user enters wrong information 3 times
             System.out.println("You are banned!");
         }
 
