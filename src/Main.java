@@ -29,7 +29,8 @@ public class Main {
                 String passwordInput = input.nextLine();
 
                 //if both username and password match, then the user can log in
-                if (usernameInput.equals(username) && passwordInput.equals(password)) {
+                //ignore case differences for username input
+                if (usernameInput.equalsIgnoreCase(username) && passwordInput.equals(password)) {
                     System.out.println("You have been validated!");
                 }
 
